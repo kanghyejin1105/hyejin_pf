@@ -1,0 +1,451 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none;color: #000;}
+img{border: 0; vertical-align: top;}
+
+body{
+  font-family: "Playfair Display","Noto Sans KR", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+#header{
+  width:100%;
+  padding: 1%;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  
+}
+#header .index_name{
+  width: 100%;
+  font-weight: 500;
+  font-size: 15pt;
+  text-align: right;
+  padding-right: 2%;
+  box-sizing: border-box;
+}
+
+/* ----------------home--------------------------- */
+
+#section{
+  width: 100%;
+}
+#section .home{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+#section .home .m_phrase{
+  position: absolute;
+  top: 34%;
+  left: 8%;
+  font-size:9vw;
+  font-weight: 400;
+}
+#section .home .m_web{
+  position:absolute;
+  left: 6%;
+  top: 30%;
+  font-style: italic;
+  font-size: 3vw;
+  color: #8a8a8a;
+}
+#section .home .m_detail{
+  position: absolute;
+  top: 60%;
+  left: 42%;
+  font-size: 1.8vw;
+  display: flex;
+}
+#section .home .m_detail>li{
+  margin-left: 10px;
+  color: #a7a7a7;
+}
+
+/* -------------about------------------- */
+
+#section .about{
+  width: calc(100% - 40%);
+  height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  font-family: "Noto Sans KR";
+}
+
+/* item 제목 */
+#section .a_title{
+  color: #8D8BD0;
+  font-weight: 700;
+  font-size: 20pt;
+  font-family: "Playfair Display";
+  margin-bottom: 15px;
+}
+
+#section .about .a_left{
+  width: 50%;
+}
+#section .about .a_left .me{
+  width: 250px;
+  height: 250px;
+  background-image: url(../images/memoj1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.3s;
+}
+#section .about .a_left .me:hover{
+  background-image: url(../images/memoj2.png);
+}
+#section .a_left .profile{
+  width: 100%;
+  padding-top: 30px;
+  font-weight: 320;
+  color: #333333;
+}
+#section .a_left .profile>li{
+  font-size: 15pt;
+  line-height: 35px;
+}
+#section .a_left .profile>li:first-child{
+  margin-bottom: 5px;
+}
+#section .a_left .intro{
+  margin-top: 10px;
+  color: #333333;
+  line-height: 30px;
+}
+#section .a_left .intro span{
+  color: #8D8BD0;
+}
+
+/* about 오른쪽 */
+
+#section .a_right{
+  width: 50%;
+  font-size: 12pt;
+  font-weight: 320;
+  color: #333333;
+}
+#section .a_right .item>li{
+  display: flex;
+  line-height: 30px;
+}
+#section .a_right .item{
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #D9D9D9
+}
+#section .a_right .item>li .date{
+  font-weight: 300;
+  font-size: 14pt;
+  color: #787878;
+  margin-right: 20px;
+}
+#section .a_right .skill{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#section .a_right .skill>li{
+  width: 35px;height: 35px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 10px;
+}
+
+#section .a_right .skill>li:nth-child(1){
+  background-image: url(../images/icon_html5.svg);
+}
+#section .a_right .skill>li:nth-child(2){
+  background-image: url(../images/icon_css3.svg);
+}
+#section .a_right .skill>li:nth-child(3){
+  background-image: url(../images/icon-js.png);
+}
+#section .a_right .skill>li:nth-child(4){
+  background-image: url(../images/icon_jquery.svg);
+}
+#section .a_right .skill>li:nth-child(5){
+  background-image: url(../images/icon_figma.svg);
+}
+#section .a_right .skill>li:nth-child(6){
+  background-image: url(../images/icon_github.png);
+}
+#section .a_right .skill>li:nth-child(7){
+  background-image: url(../images/icon_photo.png);
+}
+#section .a_right .skill>li:nth-child(8){
+  background-image: url(../images/icon_illustrator.png);
+}
+#section .a_right .skill>li:nth-child(9){
+  background-image: url(../images/icon_swiper.svg);
+}
+#section .a_right .skill>li:nth-child(10){
+  background-image: url(../images/icon_react.svg);
+}
+
+/*---------------------- Project---------------------- */
+
+#section .project{
+  width: calc(100% - 10%);
+  margin: 0 auto;
+}
+
+/* 공통 레이아웃 */
+
+#section .project .personal, #section .project .team,#section .project .clone{
+  display: flex;
+}
+#section .project .pj_title{
+  width: 30%;
+  box-sizing: border-box;
+  border-right: 1px solid #D9D9D9;
+}
+#section .project .pj_title h1{
+  box-sizing: border-box;
+  font-size: 20pt;
+  font-weight: 300;
+  padding-top: 80%;
+  margin-left: 100px;
+}
+
+#section .project .pj_conts{
+  width: 70%;
+}
+#section .project .pj_conts .pj_con{
+  width: 100%;
+  display: flex;
+}
+
+#section .project .pj_conts .pj_con .imgwrap{
+  width: 50%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+#section .project .pj_conts .pj_con .imgwrap .pj_img{
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+#section .project .pj_conts .pj_con .imgwrap .pj_img:hover{
+  transform: scale(1.1);
+  filter: brightness(0.6);
+}
+
+/* 자세히보기 */
+#section .project .pj_conts .pj_con .overview{
+  position: absolute;
+  bottom: 8%;
+  right: 10%;
+  opacity: 0.3;
+  transition: all 0.5s;
+  font-weight: 400;
+  font-size: 12pt;
+}
+#section .project .pj_conts .pj_con:hover .overview{
+  opacity: 1;
+  color: #fff;
+}
+#section .project .pj_conts .pj_con .overview::after{
+  content:""; display: block; 
+  border-bottom: 1px solid #5a5a5a; 
+  transition: width 0.5s ease-in-out; 
+  position: absolute; 
+  left: auto; 
+  right: 0;  
+  width: 0;
+}
+#section .project .pj_conts .pj_con:hover .overview::after{
+  width: 100%; left: 0; right: auto;
+  border-bottom: 1px solid #fff;
+}
+
+/* 로고 및 특징 */
+#section .project .pj_conts .pj_con .pj_detail{
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+#section .project .pj_conts .pj_con .pj_detail img{
+  width: 40%;
+  padding-top: 20%;
+}
+#section .project .pj_conts .pj_con .pj_detail .special{
+  display: flex;
+  justify-content: center;
+}
+#section .project .pj_conts .pj_con .pj_detail .special p{
+  border: 1px solid #7e7e7e;
+  color: #5a5a5a;
+  border-radius: 30px;
+  padding: 5px 15px;
+  margin-left: 15px;
+  transition: all 0.5s;
+}
+
+
+
+/* 개인프로젝트 */
+#section .project .personal{
+  border-top: 1px solid #D9D9D9;
+}
+#section .project .personal .pj_conts .pj_top .imgwrap .pj_img{
+  background-image: url(../images/godiva_multi.jpg);
+}
+#section .project .pj_conts .pj_con .godiva img{
+  width: 30%;
+  padding-bottom:5%;
+  padding-top: 20%;
+}
+#section .project .pj_conts .pj_con .godiva:hover .special p{
+  background-color: #cdb374;
+  border: none;
+  color: #fff;
+}
+
+#section .project .personal .pj_conts .pj_bt .imgwrap .pj_img{
+  background-image: url(../images/crocs_multi.jpg);
+}
+#section .project .pj_conts .pj_con .crocs img{
+  padding-bottom:10%;
+}
+#section .project .pj_conts .pj_con .crocs:hover .special p{
+  background-color: #49dd2f;
+  border: none;
+  color: #fff;
+}
+
+/* 팀프로젝트 */
+#section .project .team{
+  border-top: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
+}
+#section .project .team .pj_conts .pj_top .imgwrap .pj_img{
+  background-image: url(../images/prada_mob.jpg);
+}
+#section .project .pj_conts .pj_con .prada img{
+  padding-bottom: 5%;
+}
+#section .project .pj_conts .pj_con .prada:hover .special p{
+  background-color: #000;
+  border: none;
+  color: #fff;
+}
+
+#section .project .team .pj_conts .pj_bt .imgwrap .pj_img{
+  background-image: url(../images/duo.jpg);
+}
+#section .project .pj_conts .pj_con .duo img{
+  width: 20%;
+  padding: 18% 30%;
+  padding-bottom: 3%;
+}
+#section .project .pj_conts .pj_con .duo:hover .special p{
+  background-color: #b6201e;
+  border: none;
+  color: #fff;
+}
+
+/* 클론코딩 */
+#section .project .clone{
+  border-bottom: 1px solid #D9D9D9;
+}
+#section .project .clone .pj_conts .pj_top .imgwrap .pj_img{
+  background-image: url(../images/dorco2.jpg);
+}
+#section .project .pj_conts .pj_con .dorco img{
+  padding-bottom: 10%;
+}
+#section .project .pj_conts .pj_con .dorco:hover .special p{
+  background-color: #c0d05b;
+  border: none;
+  color: #fff;
+}
+
+#section .project .clone .pj_conts .pj_middle .imgwrap .pj_img{
+  background-image: url(../images/cu2.jpg);
+}
+#section .project .pj_conts .pj_con .cu img{
+  width: 18%;
+  padding-bottom: 10%;
+}
+#section .project .pj_conts .pj_con .cu:hover .special p{
+  background-color: #652f8c;
+  border: none;
+  color: #fff;
+}
+
+#section .project .clone .pj_conts .pj_bt .imgwrap .pj_img{
+  background-image: url(../images/sy1.jpg);
+}
+#section .project .pj_conts .pj_con .samyang img{
+  width: 30%;
+  padding-bottom: 10%;
+}
+#section .project .pj_conts .pj_con .samyang:hover .special p{
+  background-color: #fd6313;
+  border: none;
+  color: #fff;
+}
+
+/* -------contact------------- */
+
+#section .contact{
+  width: 100%;
+  margin: 200px auto;
+}
+#section .contact .c_word{
+  display: flex;
+  justify-content: center;
+}
+#section .contact .c_phrase{
+  font-size: 100pt;
+  font-weight: 500;
+}
+#section .contact li{
+  font-size: 100pt;
+  font-weight: 500;
+}
+#section .contact .c_change_word{
+  width: 1000px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+#section .contact .c_change_word>li{
+  position: absolute;
+  top: -200px; left: 0;
+  transition: all 1s;
+  /* display: none; */
+}
+#section .contact .c_change_word>li.on{
+  top:0px;
+}
+
+
+/* --------------footer-------------- */
+#footer{
+  width: 1000px;
+  text-align: center;
+  margin: 0 auto;
+}
+#footer address{
+  font-style: normal;
+  font-weight: 100;
+  padding-bottom: 30PX;
+}
+
+
+

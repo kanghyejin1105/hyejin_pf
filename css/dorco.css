@@ -1,0 +1,200 @@
+@charset "UTF-8";
+
+#header{
+  width:100%;
+  padding: 1%;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 100;
+  background-color: #cecece3a;
+}
+#header .index_name{
+  width: 100%;
+  font-weight: 500;
+  font-size: 15pt;
+  text-align: right;
+  padding-right: 2%;
+  box-sizing: border-box;
+}
+
+/* ---------------section---------- */
+
+#section .main{
+  width: 100%;
+  height: 1000px;
+  background-image: url(../images/dorco2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+/* --------------------info--------------------------------- */
+#section .info{
+  width: calc(100% - 20%);
+  margin: 0 auto;
+  display: flex;
+}
+#section .info .in_left{
+  width: 50%;
+}
+#section .info .in_left .number{
+  font-size: 55pt;
+  font-weight: 400;
+  color: rgba(175, 175, 175, 0.693);
+}
+#section .info .in_left .web_title{
+  font-size: 40pt;
+  font-weight: 500;
+  color: #4e4e4e;
+  /* margin-left: 80px; */
+}
+#section .info .in_left .web_type{
+  margin-top: 10px;
+  font-size: 27pt;
+  font-weight: 500;
+  color: #9c9c9c;
+}
+#section .info .in_left .exp{
+  width: 80%;
+  font-size: 14pt;
+  line-height: 28px;
+  margin-top: 20px;
+  color: #636363;
+}
+
+/* detail */
+
+#section .info .detail{
+  margin-top: 30px;
+}
+#section .info .detail>li{
+  display: flex;
+  line-height: 60px;
+}
+#section .info .detail>li h3{
+  margin-right: 30px;
+  font-weight: 400;
+  font-size: 13pt;
+  color: #8D8BD0;
+}
+#section .info .detail>li p{
+  font-weight: 400;
+  font-family: "Noto Sans KR";
+  color: #4e4e4e;
+}
+
+#section .info .detail>li:last-child .color{
+  display: flex;
+  justify-content: center;
+}
+#section .info .detail>li:last-child .color>li{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-left: -5px;
+}
+#section .info .detail>li:last-child .color>li:nth-child(1){
+  background-color: #c3d455;
+}
+#section .info .detail>li:last-child .color>li:nth-child(2){
+  background-color: #fff;
+  border: 1px solid #9e9e9e;
+}
+#section .info .detail>li:last-child .color>li:nth-child(3){
+  background-color: #dfdfdd;
+}
+#section .info .detail>li:last-child .color>li:nth-child(4){
+  background-color: #564f46;
+}
+
+/* right */
+#section .info .in_right{
+  width: 50%;
+  margin: 0 auto;
+}
+#section .info .in_right .thumbnail{
+  width: 100%;
+  height: 500px;
+  margin: 70px auto;
+  background-image: url(../images/dorco_double.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#section .info .in_right .visit{
+  width: 20%;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 50px;
+  border: 1px solid #6e6e6e;
+  color: #232323;
+  padding: 15px 10px;
+  transition: all 0.3s ease-in-out;
+}
+#section .info .in_right:hover .visit{
+  transform: translateX(10px);
+  color: #fff;
+  background-color: #c3d455;
+  border:1px solid #c3d455;
+  cursor: pointer;
+}
+
+/* ------------------preview------------------------- */
+
+#section .preview{
+  width: 100%;
+  margin: 300px auto;
+}
+#section .preview .pre_title{
+  width: 100%;
+  font-size: 20pt;
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 50px;
+  text-decoration: underline;
+  text-decoration-thickness:0.1px;
+  }
+#section .preview .gallery{
+  width: 100%;
+  margin: 0 auto;
+}
+#section .preview .gallery .list_wrap{
+  width: 100%;
+  opacity: 800;
+}
+#section .preview .gallery .list_wrap .sld{
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-left: 10px;
+  opacity: 0.5;
+}
+#section .preview .gallery .list_wrap .sld.slick-center{
+  opacity: 1;
+}
+#section .preview .gallery .list_wrap .slide1{
+  background-image: url(../images/dorco3.jpg);
+}
+#section .preview .gallery .list_wrap .slide2{
+  background-image: url(../images/dorco4.jpg);
+}
+#section .preview .gallery .list_wrap .slide3{
+  background-image: url(../images/dorco_laptop.jpg);
+}
+#section .preview .gallery .list_wrap .slide4{
+  background-image: url(../images/dorco_laptop_footer.jpg);
+}
+#section .preview .gallery .list_wrap .slide5{
+  background-image: url(../images/dorco.jpg);
+}
+#section .preview .gallery .list_wrap .slide6{
+  background-image: url(../images/dorco_double.jpg);
+}
+
+
