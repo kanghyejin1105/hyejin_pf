@@ -277,6 +277,7 @@ body{
   margin: 0 auto;
   text-align: center;
   position: relative;
+  cursor: pointer;
 }
 #section .project .pj_conts .pj_con .pj_detail img{
   width: 40%;
